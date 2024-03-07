@@ -3,7 +3,9 @@ import { createContext } from "react";
 // CONTEXT
 export const ECommerceContext = createContext();
 
+// AQUI VARIABLES GLOBALES
 const pruebaContext = "Vengo del context"
+
 
 // PROVIDER
 export const ECommerceProvider = ({ children }) => {
