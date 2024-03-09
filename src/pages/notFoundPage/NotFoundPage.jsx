@@ -1,7 +1,7 @@
 
 const NotFoundPage = () => {
   return (
-    <div>Error 404 NotFoundPage</div>
+    <div className="text-3xl font-bold underline bg-nombre-del-color p-42">Error 404 NotFoundPage</div>
   )
 }
 
