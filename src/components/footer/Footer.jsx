@@ -5,7 +5,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { useState } from "react";
 
 	const Footer = () => {
-		// const {newsLeterEmail, setNewsLeterEmail} = useState("")
+
 		const [newsLetterData, setNewsLetterData] = useState({
 			nombre:"",
 			email:""
@@ -35,7 +35,7 @@ import { useState } from "react";
 					<form className="bg-cyan-700 flex flex-col gap-2 p-5 sm:bg-cyan-700 sm:w-6/12 lg:w-6/12" onSubmit={handleSubmit} method="post">
 						<h2 className="flex justify-center text-center text-xl ">Regístrate a nuestra NewsLetter</h2>
 						<div className="flex flex-col">
-							<label htmlFor="input_nombre">Nombre:</label>
+							<label className="mb-1" htmlFor="input_nombre">Nombre:</label>
 							<input 
 								className="border bg-slate-100 outline-none focus:ring-1 focus:ring-red-700 transition rounded-full h-10 px-4" 
 								type="text"
@@ -48,7 +48,7 @@ import { useState } from "react";
 							/>
 						</div>
 						<div className="flex flex-col">
-							<label htmlFor="input_email">Email:</label>
+							<label className="mb-1" htmlFor="input_email">Email:</label>
 							<input 
 								className="border bg-slate-100 outline-none focus:ring-1 focus:ring-red-700 transition rounded-full h-10 px-4" 
 								type="email"
@@ -62,28 +62,30 @@ import { useState } from "react";
 						</div>
 						<button type="submit" className="bg-orange-600 mx-auto rounded-full mt-3 w-60 h-9 hover:bg-orange-300 transition">Suscribirme</button>
 					</form>
-					<div className=" flex flex-col justify-center m-auto items-center py-4 border border-t-slate-400 sm:border-none">
-						<h2 className="underline text-lg font-medium">Mas información</h2>
-						<Link className="hover:text-red-600  hover:underline transition-all">Nosotros</Link>
-						<Link className="hover:text-red-600  hover:underline transition-all">Soporte</Link>
-						<Link className="hover:text-red-600 hover:underline transition-all">Servicios</Link>
+					<div className="flex justify-center flex-1 py-4 border border-t-slate-400 sm:border-none">
+						<div className="flex flex-col gap-2 items-center">
+							<h2 className="underline text-lg font-medium">Mas información</h2>
+							<Link className="hover:text-red-600  hover:underline transition-all">Nosotros</Link>
+							<Link className="hover:text-red-600  hover:underline transition-all">Soporte</Link>
+							<Link className="hover:text-red-600 hover:underline transition-all">Servicios</Link>
+						</div>
+						
 					</div>
 				</div>
 
-				<div className="flex flex-col justify-center place-items-center py-3 bg-slate-600">
-					<div className="flex justify-center gap-3 py-2">
+				<div className="flex flex-col justify-center place-items-center py-3 bg-slate-600 sm:flex-row-reverse sm:justify-evenly ">
+					<div className="flex justify-center gap-7 py-2">
 						<Link to={'https://www.instagram.com/sublikkar?igsh=Y3ZxcWM1MDNoNzl2'} target="blank">
-							<FaInstagram className="text-3xl text-gray-300" />
+							<FaInstagram className="text-2xl text-gray-300 hover:text-white transition" />
 						</Link>
 						<Link target="blank">
-							<FaFacebook className="text-3xl text-gray-300" />
+							<FaFacebook className="text-2xl text-gray-300 hover:text-white transition" />
 						</Link>
 						<Link to={'https://wa.link/e19qkr'} target="blank">
-							<FaWhatsapp className="text-3xl  text-gray-300" />
+							<FaWhatsapp className="text-2xl text-gray-300 hover:text-white transition" />
 						</Link>
 					</div>
-					<a href=""></a>
-					<h4 className=" text-gray-300">Sublikkar 2024. Todos los derechos reservados</h4>
+					<h4 className=" text-gray-300 text-sm sm:text-base">Sublikkar 2024. Todos los derechos reservados</h4>
 				</div>
 			</footer>
 		);
