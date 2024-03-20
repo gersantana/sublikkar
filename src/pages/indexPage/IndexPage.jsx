@@ -1,14 +1,12 @@
 import { useContext } from "react";
 import { ECommerceContext } from "../../context/ContextProyect";
+import Body from "../../components/body/Body";
 
 const IndexPage = () => {
 
-	const {pruebaContext} =  useContext(ECommerceContext)
-
 	return (
 		<div>
-			<h1>Soy la pagina de inicio</h1>
-			<h2>{pruebaContext}</h2>
+			<Body/>	
 		</div>
 	);
 };

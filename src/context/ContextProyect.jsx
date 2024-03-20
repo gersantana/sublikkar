@@ -4,7 +4,7 @@ import { createContext } from "react";
 export const ECommerceContext = createContext();
 
 // AQUI VARIABLES GLOBALES
-const pruebaContext = "Vengo del context"
+const pruebaContext = "Vengo del contextoooo"
 
 
 // PROVIDER

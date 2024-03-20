@@ -1,0 +1,10 @@
+.imagen{
+    background-image: url(./img/body-img-blanco.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center ;
+}
+
+.beneficios{
+    background-color: #00c2cb;
+}
